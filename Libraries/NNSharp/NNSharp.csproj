@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NNSharp</RootNamespace>
+    <AssemblyName>NNSharp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\dotNet_Frameworks\log4net-1.2.10\bin\net\2.0\debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\dotNet_Tools\NUnit-2.4.7-net-2.0\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analyze\IDataAnalyze.cs" />
+    <Compile Include="Analyze\MaxMinDataAnalyzer.cs" />
+    <Compile Include="DataSet\DataSetReader.cs" />
+    <Compile Include="DataSet\DataSetWriter.cs" />
+    <Compile Include="Function\SigmoidalFunction.cs" />
+    <Compile Include="Learning\ISupervisedLearning.cs" />
+    <Compile Include="Learning\IUnsupervisedLearning.cs" />
+    <Compile Include="DataTransform\ComplementDataTransform.cs" />
+    <Compile Include="DataTransform\DataTransformChain.cs" />
+    <Compile Include="DataTransform\IDataDimensionToValueTransform.cs" />
+    <Compile Include="DataTransform\IDataDimensionTransform.cs" />
+    <Compile Include="DataTransform\IDataTransform.cs" />
+    <Compile Include="DataTransform\IDataValueToDimensionTransform.cs" />
+    <Compile Include="DataTransform\IDataValueTransform.cs" />
+    <Compile Include="DataTransform\MinMaxDataTransform.cs" />
+    <Compile Include="DataTransform\OneOfNDataTransform.cs" />
+    <Compile Include="DataTransform\ReverseOneOfNDataTransform.cs" />
+    <Compile Include="DataTransform\UnComplementDataTransform.cs" />
+    <Compile Include="DataTransform\ValueToDimensionDataTransform.cs" />
+    <Compile Include="Network\FuzzyARTMap\BaseStatsAlgorithms.cs" />
+    <Compile Include="Network\FuzzyARTMap\EntropyStatsAlgorithms1.cs" />
+    <Compile Include="Network\FuzzyARTMap\IOrderingAlgorithms.cs" />
+    <Compile Include="Network\FuzzyARTMap\IStatsAlgorithms.cs" />
+    <Compile Include="Network\FuzzyARTMap\MinMaxClusteringOrderingAlgorithms.cs" />
+    <Compile Include="Network\FuzzyARTMap\ModifiedClusteringOrderingAlgorithms.cs" />
+    <Compile Include="Network\FuzzyARTMap\ModifiedFuzzyARTMap.cs" />
+    <Compile Include="Network\FuzzyARTMap\ModifiedMapField.cs" />
+    <Compile Include="Network\FuzzyARTMap\OrderedFuzzyARTMap.cs" />
+    <Compile Include="Network\FuzzyART\SimplifiedFuzzyART.cs" />
+    <Compile Include="Network\FuzzyARTMap\SimplifiedFuzzyARTMap.cs" />
+    <Compile Include="Network\NeuronLayer.cs" />
+    <Compile Include="Operation\FuzzySetIntersectionOperationFunction.cs" />
+    <Compile Include="Operation\IWeightInputOperation.cs" />
+    <Compile Include="Operation\MultiplyOperation.cs" />
+    <Compile Include="Function\HardLimitFunction.cs" />
+    <Compile Include="Function\IActivationFunction.cs" />
+    <Compile Include="Network\Neuron.cs" />
+    <Compile Include="Function\LinearFunction.cs" />
+    <Compile Include="Process\Parameter\ProcessBasedParameter.cs" />
+    <Compile Include="Process\Parameter\ProcessModifiedHybridFuzzyARTMapParameter.cs" />
+    <Compile Include="Process\Parameter\ProcessOrderedFuzzyARTMapParameter.cs" />
+    <Compile Include="Process\Parameter\ProcessSimplifiedFuzzyARTMapParameter.cs" />
+    <Compile Include="Process\ProcessModifiedHybridFuzzyARTMap.cs" />
+    <Compile Include="Process\ProcessPerformanceCounter.cs" />
+    <Compile Include="Process\ProcessOrderedFuzzyARTMap.cs" />
+    <Compile Include="Process\ProcessSimplifiedFuzzyARTMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\SimplifiedFuzzyARTMapSerializer.cs" />
+    <Compile Include="Utilities\ArraysUtil.cs" />
+    <Compile Include="Utilities\FuzzyLogicUtil.cs" />
+    <Compile Include="Analyze\MaxMinAnalyzer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

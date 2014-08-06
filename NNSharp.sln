@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{D1BE1D3C-7DA8-4909-8277-D1BC4F213DFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NNSharp", "Libraries\NNSharp\NNSharp.csproj", "{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{86FF3AD2-E9A4-401D-B0BD-A63B8D67B560}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{20E21A00-2187-4F09-9576-6BA86353760D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NNSharp.Test", "Testing\NNSharp.Test\NNSharp.Test.csproj", "{75FDB3FF-4141-485A-B56F-3D326CE470A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyARTMapGUI", "Application\FuzzyARTMapGUI\FuzzyARTMapGUI.csproj", "{3594664D-E6DF-49D2-B032-65A2D2CA45C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyARTMapDemo1", "Application\FuzzyARTMapDemo1\FuzzyARTMapDemo1.csproj", "{00058907-8F85-457D-B4EF-66B9D792F454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyARTMapDemo2", "Application\FuzzyARTMapDemo2\FuzzyARTMapDemo2.csproj", "{E495CBD3-F971-457D-AA82-9526E23D063F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75FDB3FF-4141-485A-B56F-3D326CE470A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FDB3FF-4141-485A-B56F-3D326CE470A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FDB3FF-4141-485A-B56F-3D326CE470A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FDB3FF-4141-485A-B56F-3D326CE470A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3594664D-E6DF-49D2-B032-65A2D2CA45C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3594664D-E6DF-49D2-B032-65A2D2CA45C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3594664D-E6DF-49D2-B032-65A2D2CA45C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3594664D-E6DF-49D2-B032-65A2D2CA45C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00058907-8F85-457D-B4EF-66B9D792F454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00058907-8F85-457D-B4EF-66B9D792F454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00058907-8F85-457D-B4EF-66B9D792F454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00058907-8F85-457D-B4EF-66B9D792F454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E495CBD3-F971-457D-AA82-9526E23D063F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E495CBD3-F971-457D-AA82-9526E23D063F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E495CBD3-F971-457D-AA82-9526E23D063F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E495CBD3-F971-457D-AA82-9526E23D063F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F7A1E51-1025-4AC2-AB67-5CF6B2E8ED72} = {D1BE1D3C-7DA8-4909-8277-D1BC4F213DFB}
+		{75FDB3FF-4141-485A-B56F-3D326CE470A3} = {86FF3AD2-E9A4-401D-B0BD-A63B8D67B560}
+		{3594664D-E6DF-49D2-B032-65A2D2CA45C5} = {20E21A00-2187-4F09-9576-6BA86353760D}
+		{00058907-8F85-457D-B4EF-66B9D792F454} = {20E21A00-2187-4F09-9576-6BA86353760D}
+		{E495CBD3-F971-457D-AA82-9526E23D063F} = {20E21A00-2187-4F09-9576-6BA86353760D}
+	EndGlobalSection
+EndGlobal
